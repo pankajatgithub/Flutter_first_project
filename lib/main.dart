@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() =>  runApp(MaterialApp(
@@ -5,12 +6,27 @@ void main() =>  runApp(MaterialApp(
     appBar: AppBar(
       title: Text("My First App"),
       centerTitle: true,
+      backgroundColor:Colors.amber[600],
     ),
     body: Center(
-      child: Text("Hello Pankaj"),
+      child: Text(
+          "Hello Pankaj",
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.grey[400],
+          fontFamily: 'IndieFlower'
+
+        ),
+      ),
     ),
     floatingActionButton: FloatingActionButton(
+      onPressed: (){},
      child: Text("click"),
+      backgroundColor: Colors.amber[600],
+
+
 
     ),
   )
